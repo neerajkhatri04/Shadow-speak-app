@@ -31,7 +31,7 @@ main().catch(err => console.log(err));
  
 async function main() {
     mongoose.set('strictQuery', true);
-    await mongoose.connect('mongodb://127.0.0.1/userDB');
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("Mongoose Connected");
 
     const userSchema = new mongoose.Schema({
@@ -195,7 +195,7 @@ app.post("/login", function(req, res){
     
     
     
-    app.listen(3000, () => {
+    app.listen(3000 || process.env.PORT, () => {
         console.log('Server is running on port 3000');
     });
 
