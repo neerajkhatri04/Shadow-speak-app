@@ -38,7 +38,7 @@ async function main() {
         email: String,
         password: String,
         googleId: String,
-        secret: Array
+        secret: String
     });
 
 
@@ -141,15 +141,15 @@ async function main() {
     app.post("/submit", function(req, res) {
       
       User.findById(req.user.id, function(err, user) {
-        if(req.isAuthenticated()){
-          User.findById(req.user.id, function(err, user){
-            user.secret.push(req.user.secret);
+        if(err){
+          console.log(err);
+        } else {
+          if (user) {
+            user.secret = req.body.secret;
             user.save(function(){
               res.redirect("/secrets")
             });
-          });
-        } else {
-          res.redirect('/login');
+          }
         }
       });
     });
