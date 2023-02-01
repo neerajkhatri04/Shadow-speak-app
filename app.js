@@ -140,7 +140,6 @@ async function main() {
 
     app.post("/submit", function(req, res) {
       
-      console.log(req);
       User.findById(req.user.id, function(err, user) {
         if(err){
           console.log(err);
