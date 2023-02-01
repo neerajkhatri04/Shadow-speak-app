@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<div class=" umbotron centered  submit-div">
+  <div class="container submit-ele">
+    <i class="fa-solid fa-mask fa-6x" style="color: #343a40"></i>
+    <h1 class="display-3">Shadow Speaks</h1>
+    <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="secret" placeholder="Tell me a secret !" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-dark">Post</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>

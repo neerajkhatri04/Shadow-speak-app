@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow Speak Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  
+  
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1 class="title">Shadow Speak</h1>
+		<p>Speak your truth, no matter how dark it may seem, in the shadow of anonymity lies the courage to be heard.</p>
+		<span>
+			<p>Login with social accounts</p>
+			<a href="/auth/google" class="google-anc"><img src="/css/images/gogle.png" class="google-img" alt="google.png">  Login with Google</a>
+			<!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a> -->
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>New to Shadow Speak? Make sure to <a href="/register">Sign up</a> first.</p>
+		
+	<form action="/login" method="POST">
+		<div class="inputs">
+			<input type="email" placeholder="username" name="username" autocomplete="off">
+			<br>
+			<input type="password" placeholder="password" name="password">
+      <br>
+      
+		</div>
+    <br>
+	<div class="buttons">
+		<button type="submit">Login</button>
+		<a class="register-btn" href="/register" role="button">Register</a>
+	  </div>
+	  
+	</form>
+	<br>
+			
+			<br><br>
+			
+			<br>
+			
+	</div>
+	
+</div>
+<!-- partial -->
+  
+</body>
+</html>

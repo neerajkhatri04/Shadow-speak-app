@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Sacramento&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.brand-title {
+  font-family: 'Sacramento', cursive;
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 30px;
+  color: #343a40;
+}
+
+.home-items {
+  justify-content: center;
+  text-align: center;
+  padding-top: 9rem;
+  word-spacing: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border-top:7px dotted rgb(230, 221, 221);
+  width: 10%;
+}
+
+.login-btn {
+  border-radius: 60px;
+}
+
+.register-btn {
+  border-radius: 60px;
+}
+
+.login-btn:hover {
+  color: black;
+  background-color: #fff;
+  outline: none;
+}
+
+.register-btn:hover {
+  color: #fff;
+  background-color: #343a40;
+  outline: none;
+}
+
+.buttons-div {
+  word-spacing: 5rem;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #333333;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 50px;
+}
+
+.display-3 {
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.secret-main-div {
+  height: 100vh;
+  background-color: #e6e6e6;
+  opacity: 1;
+  background-image:  radial-gradient(#333333 0.45px, transparent 0.45px), radial-gradient(#333333 0.45px, #e6e6e6 0.45px);
+  background-size: 18px 18px;
+  background-position: 0 0,9px 9px;
+}
+
+.submit-div {
+  height: 100vh;
+  background-color: #fffcfc;
+  opacity: 1;
+  background-image: radial-gradient(#000000 0.65px, #fffcfc 0.65px);
+  background-size: 13px 13px;
+}
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 767px) {
+  .brand-title {
+  font-size: 2rem;
+  }
+  .secret-text {
+  font-size: 1.5rem;
+  }
+  .display-3 {
+  font-size: 1.5rem;
+  }
+  hr {
+  width: 80%;
+  }
+  .buttons-div {
+  word-spacing: 2rem;
+  }
+  .secret-main-div {
+  background-size: 14px 14px;
+  background-position: 0 0,7px 7px;
+  }
+  } */
+
+  @media only screen and (max-width: 767px) {
+    .secret-main-div {
+    height: auto;
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+    }
+    
+    .fa-mask {
+    font-size: 10rem;
+    }
+    
+    .display-3 {
+    font-size: 3rem;
+    line-height: 1.2;
+    }
+    
+    .secret-text {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    }
+    
+    hr {
+    width: 40%;
+    }
+    }
+  
+  
+  
+  
